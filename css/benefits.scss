@@ -1,0 +1,71 @@
+.benefits {
+    display: flex;
+    position: relative;
+    
+
+    &::before{
+        content: url('./img/Icons/Прямоугольник_19.png');
+        position: absolute;
+        bottom: -10px;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+     &:before{
+         content: url('./img/Icons/1.png');
+         position: absolute;
+         top: 50px;
+         right: 0;
+         transform: translate(50%);
+        
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit__image-wrapper {
+    display: inline-block;  
+    width: 126px;
+    height: 126px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $grey;
+}
+
+.benefit__icon {
+    width: 58px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefit__image {
+    margin-bottom: 30px;
+}
+
+.benefit__title {
+    font-size: 24px;
+    color: $black;
+    margin-bottom: 20px;
+}

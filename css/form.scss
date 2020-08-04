@@ -1,0 +1,55 @@
+.order__section {
+    background: url('./img/Векторный_смарт-объект.png') center no-repeat ;
+    background-color: #161616;
+    color: $white;
+}
+
+.form{
+    display: flex;
+    
+}
+
+.form__col {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.form__black {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.form__input{
+    width: 100%;
+    border: none;
+    padding: 17px 11px;
+    border: 2px solid transparent;
+
+    &--textarea {
+        height: 165px;
+        resize: none;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: #e01f3d;
+    }
+}
+
+.form__controls{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,100 @@
+.reviews {
+    margin-top: 40px;
+}
+
+.review__title {
+    font-size: 27px;
+    font-weight: bold;
+    color: $black;
+    margin-bottom: 30px;
+}
+
+.reviews__section{
+    background: url('./img/Icons/Эллипс_8.png') left bottom no-repeat;
+    
+}
+
+.reviews__display {
+    padding: 50px 45px 34px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    background: $grey;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 90px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -65px;
+    }
+}
+
+.reviews__display-inner {
+    display: flex;
+}
+
+.reviews__avatar {
+    width: 254px;
+    height: 260px;
+}
+
+.reviews__avatar-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.review__content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.review__text {
+    margin-bottom: 25px;
+}
+
+.review__author {
+    font-size: 18px;
+    font-weight: bold;
+    color: $black;
+}
+
+.reviews__switcher {
+    display: flex;
+    justify-content: center;
+}
+
+.interactive-avatar {
+    width: 80px;
+    height: 80px;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &--active {
+    border: 6px solid #e01f3d
+    }
+}
+
+.interactive-avatar__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+.interactive-avatar__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
