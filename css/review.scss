@@ -1,5 +1,11 @@
 .reviews {
     margin-top: 40px;
+    
+    &:after {
+        position: absolute;
+        top: 820px;
+        content: url('../img/Icons/8.png');
+    }
 }
 
 .review__title {
@@ -7,12 +13,9 @@
     font-weight: bold;
     color: $black;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
-.reviews__section{
-    background: url('./img/Icons/Эллипс_8.png') left bottom no-repeat;
-    
-}
 
 .reviews__display {
     padding: 50px 45px 34px;
@@ -32,6 +35,7 @@
         left: 50%;
         transform: translate(-50%);
         top: -65px;
+        
     }
 }
 
@@ -68,6 +72,8 @@
 .reviews__switcher {
     display: flex;
     justify-content: center;
+
+    
 }
 
 .interactive-avatar {

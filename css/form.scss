@@ -1,17 +1,25 @@
 .order__section {
-    background: url('./img/Векторный_смарт-объект.png') center no-repeat ;
-    background-color: #161616;
+    background: url('../img/vo.png')center bottom no-repeat;
     color: $white;
+    background-color: #161616;
 }
 
 .form{
     display: flex;
+    background-color: #161616;
     
+    &:after {
+        position: absolute;
+        content: url('../img/Icons/11.png');
+        top: -20px;
+        right: 10%;
+    }
 }
 
 .form__col {
     flex: 1;
     margin-right: 20px;
+    
 
     &:last-child {
         margin-right: 0;
@@ -20,7 +28,7 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 }
 
 .form__black {
@@ -52,4 +60,9 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.form__controls--last {
+    margin-bottom: 40px;
 }

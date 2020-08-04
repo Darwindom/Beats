@@ -4,9 +4,9 @@
     
 
     &::before{
-        content: url('./img/Icons/Прямоугольник_19.png');
+        content: url('../img/Icons/19.png');
         position: absolute;
-        bottom: -10px;
+        bottom: -50%;
     }
 }
 
@@ -16,7 +16,7 @@
     position: relative;
 
      &:before{
-         content: url('./img/Icons/1.png');
+         content: url('../img/Icons/1.png');
          position: absolute;
          top: 50px;
          right: 0;

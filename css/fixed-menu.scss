@@ -12,6 +12,10 @@
         .fixed-menu__link {
             border-color: $red;
         }
+    .fixed-menu__link::before{
+        background: $red;
+    }
+        
     }
 }
 
@@ -36,5 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         
+
     }
+    
 }
