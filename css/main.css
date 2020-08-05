@@ -1,4 +1,4 @@
-@import url("../../normalize.css");
+@import url("./normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -365,7 +365,7 @@ a {
   object-fit: cover;
 }
 
-.order__section {
+.order-section {
   background: url("../img/vo.png") center bottom no-repeat;
   color: #fff;
   background-color: #161616;
