@@ -366,7 +366,7 @@ a {
 }
 
 .order-section {
-  background: url("../img/vo.png") center bottom no-repeat;
+  background: url("./img/vo.png") center bottom no-repeat;
   color: #fff;
   background-color: #161616;
 }
