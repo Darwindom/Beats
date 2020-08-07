@@ -4,7 +4,7 @@
     user-select: none;
 
     &:nth-child(2) {
-        margin-left: 10px;
+        margin-left: rem(10px);
     }
     
 
@@ -31,19 +31,19 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     position: relative;
     background: $white;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
 
     &:before {
         content: "";
         display: none;
-        width: 10px;
-        height: 10px;
+        width: rem(10px);
+        height: rem(10px);
         background-color: $red;
         position: absolute;
         border-radius: 50%;

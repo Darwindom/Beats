@@ -11,14 +11,14 @@
     &:after {
         position: absolute;
         content: url('../img/Icons/11.png');
-        top: -20px;
+        top: rem(-20px);
         right: 10%;
     }
 }
 
 .form__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
     
 
     &:last-child {
@@ -28,12 +28,12 @@
 
 .form__row {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .form__black {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
         margin: 0;
@@ -43,11 +43,11 @@
 .form__input{
     width: 100%;
     border: none;
-    padding: 17px 11px;
-    border: 2px solid transparent;
+    padding: rem(17px) rem(11px);
+    border: rem(2px) solid transparent;
 
     &--textarea {
-        height: 165px;
+        height: rem(165px);
         resize: none;
     }
 
@@ -60,9 +60,9 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
 }
 
 .form__controls--last {
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }

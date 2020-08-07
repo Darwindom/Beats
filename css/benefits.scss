@@ -18,9 +18,13 @@
      &:before{
          content: url('../img/Icons/1.png');
          position: absolute;
-         top: 50px;
+         top: rem(50px);
          right: 0;
          transform: translate(50%);
+
+         @include tablets {
+            display: none;
+        }
         
     }
 
@@ -35,6 +39,7 @@
             display: none;
         }
     }
+    
 }
 
 .benefit {
@@ -43,8 +48,8 @@
 
 .benefit__image-wrapper {
     display: inline-block;  
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     border-radius: 50%;
     overflow: hidden;
@@ -52,8 +57,8 @@
 }
 
 .benefit__icon {
-    width: 58px;
-    height: 62px;
+    width: rem(58px);
+    height: rem(62px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,11 +66,11 @@
 }
 
 .benefit__image {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .benefit__title {
-    font-size: 24px;
+    font-size: rem(24px);
     color: $black;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }

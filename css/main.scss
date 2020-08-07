@@ -1,3 +1,6 @@
+// Breakpoints
+$tablets: 768px;
+$phones: 480px;
 
 // color
 $grey: #f5f5f5;
@@ -11,6 +14,8 @@ $black: #000;
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+@import 'media';
+
 // z-indexes
 $z-fixed-menu: 100;
 
@@ -18,9 +23,11 @@ $z-fixed-menu: 100;
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 
+
 @import 'base';
 @import 'hero';
 @import 'header';
+@import 'hamburger';
 @import 'section';
 @import 'benefits';
 @import 'review';
@@ -29,6 +36,8 @@ $z-fixed-menu: 100;
 @import 'features';
 @import 'feature';
 @import 'fixed-menu';
+
+
 
 
 

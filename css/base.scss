@@ -4,13 +4,28 @@
     list-style: none; 
     
     }
+
+    html {
+        font-size: $baseFontSize;
+
+        @include tablets {
+            font-size: $baseFontSize - 1px;
+        }
+
+        @include phones {
+            font-size: $baseFontSize - 2px;
+        }
+    }
+
+    html, body{
+        font-size: $baseFontSize;
+    }
     
     body{
         font-family: 'Play', sans-serif;
         line-height: 1.42;
         -webkit-osx-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-size: $baseFontSize;
         color: #666666;
         margin: 0;
     }
@@ -18,15 +33,16 @@
     .wrapper{
         position: relative;
         width: 100%;
-        min-width: $containerWidth + 20px;
         min-height: 100%;
         overflow: hidden;
     }
     
     
     .container{
-        width: $containerWidth;
+        width: 95%;
+        max-width: $containerWidth;
         margin: 0 auto;
+        position: relative;
     }
 
     
@@ -66,16 +82,16 @@
     }
     
     .btn{
-        font-size: 16px;
         font-weight: bold;
-        padding: 17px 32px;
+        padding: rem(17px) rem(32px);
         text-transform: uppercase;
-        border-radius: 100px;
+        border-radius: rem(100px);
         line-height: 1;
         color: $white;
         background: $red;
         text-decoration: none;
         border: none;
+        display: inline-block;
 
         &:hover{
             background-color: $darkred;
