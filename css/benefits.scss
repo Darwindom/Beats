@@ -1,6 +1,9 @@
 .benefits {
     display: flex;
-    position: relative;
+    
+    @include phones {
+        flex-direction: column;
+    }
     
 
     &::before{
@@ -15,6 +18,11 @@
     padding: 0 3%;
     position: relative;
 
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(30px);
+    }
+
      &:before{
          content: url('../img/Icons/1.png');
          position: absolute;
@@ -23,6 +31,10 @@
          transform: translate(50%);
 
          @include tablets {
+            display: none;
+        }
+
+        @include phones {
             display: none;
         }
         
@@ -44,6 +56,11 @@
 
 .benefit {
     text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+    }
 }
 
 .benefit__image-wrapper {
@@ -67,10 +84,17 @@
 
 .benefit__image {
     margin-bottom: rem(30px);
+
+    @include phones {
+        margin-right: rem(20px);
+    }
+    
 }
 
 .benefit__title {
     font-size: rem(24px);
     color: $black;
     margin-bottom: rem(20px);
+
+    
 }

@@ -12,7 +12,7 @@
     font-size: rem(27px);
     font-weight: bold;
     color: $black;
-    padding: rem(20px) rem(0px);
+    margin-bottom: rem(30px);
     text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-    }
+        }
 }
 
 .reviews__avatar {
@@ -56,8 +56,12 @@
     @include tablets {
         width: rem(131px);
         height: rem(133px);
+        }
 
-    }
+        @include phones {
+            width: rem(122px);
+            height: rem(125px);
+            }
 }
 
 .reviews__avatar-img {
@@ -99,6 +103,7 @@
     &--active {
     border: rem(6px) solid #e01f3d
     }
+
 }
 
 .interactive-avatar__link {

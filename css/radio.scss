@@ -3,6 +3,10 @@
     cursor: pointer;
     user-select: none;
 
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+
     &:nth-child(2) {
         margin-left: rem(10px);
     }
@@ -24,7 +28,7 @@
     display: none;
 
     &:checked ~ .radio__visible{
-        &:before {
+        &::before {
             display: block;
         }
     }

@@ -2,19 +2,35 @@
     background: url('../img/vo.png') center bottom no-repeat;
     color: $white;
     background-color: #161616;
+    
 }
 
 .form{
     display: flex;
-    background-color: #161616;
+    
+   
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+        }
+
+        @include phones {
+            padding: 0;
+        }
     
     &:after {
         position: absolute;
         content: url('../img/Icons/11.png');
         top: rem(-20px);
         right: 10%;
+
+        @include tablets {
+            top: rem(-75px);
+        }
+
     }
-}
+
+    }
 
 .form__col {
     flex: 1;
@@ -24,14 +40,19 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 0;
+    }
+    
 }
 
 .form__row {
     display: flex;
-    margin-bottom: rem(25px);
+    margin-bottom: rem(30px);
 }
 
-.form__black {
+.form__block {
     flex: 1;
     margin-right: rem(20px);
 
@@ -47,7 +68,7 @@
     border: rem(2px) solid transparent;
 
     &--textarea {
-        height: rem(165px);
+        height: rem(180px);
         resize: none;
     }
 
@@ -60,9 +81,18 @@
 .form__controls{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(8px);
+    margin-bottom: rem(5px);
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__controls--last {
     margin-bottom: rem(40px);
+}
+
+.form__btns {
+    display: flex;
+    justify-content: center;
 }
