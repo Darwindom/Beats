@@ -9,15 +9,22 @@
 
     &:nth-child(2) {
         margin-left: rem(10px);
+        
+        @include compact {
+            margin-left: 0;
+        }
     }
     
 
     &--checkbox {
         .radio__visible {
             border-radius: 0;
+            
+            
 
             &:before {
                 border-radius: 0;
+                
             }
 
         }

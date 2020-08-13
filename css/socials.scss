@@ -1,46 +1,25 @@
-.socials{
-    margin-right: 83px;
-    
-    @include phones {
-        margin: 0;
-    }
-  }
-  
+
   .socials__list{
       display: flex;
+      justify-content: flex-end;
+
+      @include phones{
+        display: flex;
+        justify-content: center;
+      }
   }
   
   .socials__item{
     margin-left: 10px;
       width: 36px;
       height: 36px;
-      position: relative;    
-      border-radius: 50%;
-      padding: 20px;
+      position: relative;   
   }
 
-  .socials__link{
-    display: block;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 36px;
-   height: 36px;
-  }
+ .tm-icon, .vk-icon, .in-icon{
+   fill: $darkgrey;
+ }
 
-.socials__link_icon_tg {
-    background: url('../img/Icons/css_sprites.png') -10px -10px;
-}
 
-.socials__link_icon_vk {
-    background: url('../img/Icons/css_sprites.png') -57px -10px;
-}
 
-.socials__link_icon_fb {
-    background: url('../img/Icons/css_sprites.png') -10px -57px;
-    }
-    
-.socials__link_icon_im {
-    background: url('../img/Icons/css_sprites.png') -57px -57px;
-    }
+

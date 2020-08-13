@@ -14,9 +14,14 @@
         padding: 0 19%;
         }
 
-        @include phones {
-            padding: 0;
+        @include tablets {
+            padding: 70px;
         }
+
+        @include phones {
+            padding: 0px;
+        }
+
     
     &:after {
         position: absolute;
@@ -63,13 +68,21 @@
 
 .form__input{
     width: 100%;
-    border: none;
     padding: rem(17px) rem(11px);
     border: rem(2px) solid transparent;
+    border-radius: 4px;
+    @include tablets {
+        padding: rem(8px) rem(11px);
+    }
 
     &--textarea {
         height: rem(180px);
         resize: none;
+        border: none;
+
+        @include tablets {
+            height: rem(80px);
+        }
     }
 
     &:focus {
@@ -78,10 +91,12 @@
     }
 }
 
+
 .form__controls{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: rem(5px);
+    
 
     @include phones {
         justify-content: center;
@@ -90,6 +105,7 @@
 
 .form__controls--last {
     margin-bottom: rem(40px);
+   
 }
 
 .form__btns {

@@ -14,3 +14,8 @@
     }
 }
 
+@mixin compact {
+    @media screen and (max-width: $compact) {
+        @content;
+    }
+}
