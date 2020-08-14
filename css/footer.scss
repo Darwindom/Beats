@@ -1,8 +1,8 @@
 .footer {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    
+    
     
     color: $black;
     background: $white;
@@ -12,39 +12,57 @@
         flex-direction: column;
         align-items: center;
         }
+
+}
+
+.footer__container {
+    min-height: rem(50px);
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 
 .contacts {
     font-style: normal;
-    font-size: rem(20px); 
+    font-size: rem(20px);    
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 
     @include phones {
        position: absolute;
-       bottom: 50px;
-       left: 80px;
-
+       bottom: rem(50px);
+       left: rem(80px);
+       display: flex;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .contacts__place {
 
+
     @include phones {
-        margin-bottom: 10px;
+        margin-bottom: rem(10px);
     }
 }
 
 .footer__phone-number {
     @include phones {
-    margin-left: 60px;
+    margin-left: rem(60px);
     }
 }
 
 .footer-section {
     height: 100vh;
     position: relative;
+    
 }

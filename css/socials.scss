@@ -1,7 +1,8 @@
 
   .socials__list{
+    display: block;
       display: flex;
-      justify-content: flex-end;
+      
 
       @include phones{
         display: flex;
@@ -10,10 +11,10 @@
   }
   
   .socials__item{
-    margin-left: 10px;
-      width: 36px;
-      height: 36px;
-      position: relative;   
+    margin-left: rem(10px);
+      width: rem(36px);
+      height: rem(36px);
+        
   }
 
  .tm-icon, .vk-icon, .in-icon{
