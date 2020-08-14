@@ -913,8 +913,8 @@ a {
 .form:after {
   position: absolute;
   content: url("../img/Icons/11.png");
-  top: -1.25rem;
-  right: 10%;
+  top: -13.4375rem;
+  right: -9.375rem;
 }
 @media screen and (max-width: 768px) {
   .form:after {

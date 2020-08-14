@@ -26,8 +26,8 @@
     &:after {
         position: absolute;
         content: url('../img/Icons/11.png');
-        top: rem(-20px);
-        right: 10%;
+        top: rem(-215px);
+        right: rem(-150px);
 
         @include tablets {
             top: rem(-75px);
