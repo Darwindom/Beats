@@ -451,13 +451,18 @@ a {
 .hero:after {
   position: absolute;
   right: 18.75rem;
-  top: 57.5rem;
+  top: 54.375rem;
   content: url("../img/Icons/18.png");
 }
 @media screen and (max-width: 768px) {
   .hero:after {
     right: 6.875rem;
-    top: 57.5rem;
+    top: 48.75rem;
+  }
+}
+@media screen and (max-width: 349px) {
+  .hero:after {
+    right: 2.5rem;
   }
 }
 
@@ -534,10 +539,11 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 70px;
+  vertical-align: middle;
 }
 
 .logo {
-  width: 2.625rem;
+  margin-top: -8px;
 }
 
 .menu {
@@ -627,6 +633,11 @@ a {
   margin: 0 auto;
   position: relative;
 }
+@media screen and (max-width: 349px) {
+  .section {
+    min-height: 1100px;
+  }
+}
 
 .section__title {
   color: #000;
@@ -647,7 +658,6 @@ a {
 }
 
 .headline {
-  text-align: center;
   margin-bottom: 3.5625rem;
 }
 
@@ -911,6 +921,11 @@ a {
     top: -4.6875rem;
   }
 }
+@media screen and (max-width: 349px) {
+  .form:after {
+    top: -13.4375rem;
+  }
+}
 
 .form__col {
   flex: 1;
@@ -1146,7 +1161,7 @@ a {
   .contacts {
     bottom: 3.125rem;
     left: 5rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 }
 
@@ -1160,11 +1175,6 @@ a {
   .footer__phone-number {
     margin-left: 3.75rem;
   }
-}
-
-.footer-section {
-  height: 100vh;
-  position: relative;
 }
 
 .socials__list {

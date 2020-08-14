@@ -1,5 +1,4 @@
 .hero{
-
     background-color: $grey;
     min-height: rem(650px);
     color: $black;
@@ -10,12 +9,16 @@
     &:after {
         position: absolute;
         right: rem(300px);
-        top: rem(920px);
+        top: rem(870px);
         content: url('../img/Icons/18.png');
 
         @include tablets {
          right: rem(110px);
-         top: rem(920px);
+         top: rem(780px);
+        }
+
+        @include compact {
+            right: rem(40px)
         }
     }
 }

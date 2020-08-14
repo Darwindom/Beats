@@ -1,9 +1,6 @@
 .footer {
     position: absolute;
     bottom: 0;
-    
-    
-    
     color: $black;
     background: $white;
 
@@ -38,7 +35,7 @@
     @include phones {
        bottom: rem(50px);
        left: rem(80px);
-       margin-bottom: 15px;
+       margin-bottom: rem(15px);
     }
 }
 
@@ -55,8 +52,3 @@
     }
 }
 
-.footer-section {
-    height: 100vh;
-    position: relative;
-    
-}
