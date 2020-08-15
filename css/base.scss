@@ -110,5 +110,20 @@
     }
 }
 
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    cursor: pointer; }
+  
+  .arrows-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    cursor: pointer; }
+
 
     

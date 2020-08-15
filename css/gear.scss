@@ -1,0 +1,31 @@
+.gear {
+  margin-top: rem(-66px);
+  background: #9A9A9A;
+  border-radius: rem(5px);
+  height: rem(120px);
+  width: rem(120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: #6E6E6E;
+  }
+  &:hover + .gear__items-list{
+    opacity: 1;
+  }
+}
+
+
+.items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.gear__items-list {
+  height: rem(120px);
+  opacity: 0;
+}

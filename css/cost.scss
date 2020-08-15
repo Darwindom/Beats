@@ -1,0 +1,18 @@
+.cost {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: rem(24px);
+    }
+  
+    &__value {
+      font-size: rem(36px);
+      text-transform: uppercase;
+      color: #151515;
+    }
+  
+    &__cost {
+      margin-right: rem(13px);
+    }
+  }
