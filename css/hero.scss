@@ -9,12 +9,12 @@
     &:after {
         position: absolute;
         right: rem(300px);
-        top: rem(870px);
+        top: rem(920px);
         content: url('../img/Icons/18.png');
 
         @include tablets {
          right: rem(110px);
-         top: rem(780px);
+         top: rem(830px);
         }
 
         @include compact {

@@ -466,13 +466,13 @@ a {
 .hero:after {
   position: absolute;
   right: 18.75rem;
-  top: 54.375rem;
+  top: 57.5rem;
   content: url("../img/Icons/18.png");
 }
 @media screen and (max-width: 768px) {
   .hero:after {
     right: 6.875rem;
-    top: 48.75rem;
+    top: 51.875rem;
   }
 }
 @media screen and (max-width: 349px) {
@@ -695,7 +695,18 @@ a {
 .benefits::before {
   content: url("../img/Icons/19.png");
   position: absolute;
-  bottom: -50%;
+  bottom: -53%;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .benefits::before {
+    bottom: -26%;
+  }
+}
+@media screen and (max-width: 549px) {
+  .benefits::before {
+    bottom: -8%;
+  }
 }
 
 .benefits__item {
@@ -916,12 +927,12 @@ a {
 }
 @media screen and (max-width: 768px) {
   .form {
-    padding: 70px;
+    padding: 4.375rem;
   }
 }
 @media screen and (max-width: 549px) {
   .form {
-    padding: 0px;
+    padding: 0;
   }
 }
 .form:after {
@@ -932,7 +943,14 @@ a {
 }
 @media screen and (max-width: 768px) {
   .form:after {
-    top: -4.6875rem;
+    top: -0.9375rem;
+    right: 3.125rem;
+  }
+}
+@media screen and (max-width: 549px) {
+  .form:after {
+    top: -5.3125rem;
+    right: 1.875rem;
   }
 }
 @media screen and (max-width: 349px) {
@@ -971,7 +989,7 @@ a {
   width: 100%;
   padding: 1.0625rem 0.6875rem;
   border: 0.125rem solid transparent;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 @media screen and (max-width: 768px) {
   .form__input {
@@ -1224,11 +1242,20 @@ a {
   overflow: hidden;
 }
 .slider__slide-logo {
+  margin-top: 3.125rem;
   margin-right: 3.125rem;
   display: block;
   border-radius: 50%;
-  max-width: 24.0625rem;
-  max-height: 24.0625rem;
+  max-width: 30.3125rem;
+  max-height: 30.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__slide-logo {
+    margin-top: 1.875rem;
+    margin-right: 0;
+    max-width: 19.8125rem;
+    max-height: 19.8125rem;
+  }
 }
 .slider__item {
   width: 100%;
@@ -1240,19 +1267,54 @@ a {
 .slider__left {
   position: absolute;
   top: 50%;
-  left: 1.25rem;
+  left: 5.625rem;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .slider__left {
+    top: 28%;
+    left: 9.375rem;
+  }
+}
+@media screen and (max-width: 549px) {
+  .slider__left {
+    top: 25%;
+    left: 1.875rem;
+  }
+}
+@media screen and (max-width: 349px) {
+  .slider__left {
+    top: 23%;
+    left: 1.25rem;
+  }
 }
 .slider__right {
   transform: rotate(180deg);
   position: absolute;
   top: 50%;
-  right: 1.25rem;
+  right: 5.625rem;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .slider__right {
+    top: 28%;
+    right: 9.375rem;
+  }
+}
+@media screen and (max-width: 549px) {
+  .slider__right {
+    top: 25%;
+    right: 1.875rem;
+  }
+}
+@media screen and (max-width: 349px) {
+  .slider__right {
+    top: 23%;
+    right: 1.25rem;
+  }
 }
 .slider__list {
   display: flex;
-  list-style: none;
   height: 100%;
   width: auto;
   padding: 0;
@@ -1268,12 +1330,35 @@ a {
   flex-grow: 0;
   flex-shrink: 0;
 }
+@media screen and (max-width: 768px) {
+  .slider__slide {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .slider__slide-title {
   font-weight: bold;
   font-size: 2.25rem;
   text-transform: uppercase;
   color: #292929;
-  margin-top: 1.5625rem;
+  max-width: 25rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__slide-title {
+    max-width: 100%;
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 549px) {
+  .slider__slide-title {
+    min-width: 90%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 349px) {
+  .slider__slide-title {
+    font-size: 1.6875rem;
+  }
 }
 .slider__slide-description {
   font-weight: normal;
@@ -1282,17 +1367,44 @@ a {
   margin-top: 1.5rem;
   max-width: 22.8125rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__slide-description {
+    text-align: center;
+    max-width: 39.375rem;
+  }
+}
+.slider:after {
+  content: url("../img/Icons/20.png");
+  position: absolute;
+  bottom: -3%;
+  right: 15%;
+}
+@media screen and (max-width: 768px) {
+  .slider:after {
+    bottom: -3%;
+  }
+}
+@media screen and (max-width: 549px) {
+  .slider:after {
+    right: 5%;
+  }
+}
 
 .gear {
-  margin-top: -4.125rem;
+  margin-top: -1.25rem;
   background: #9A9A9A;
   border-radius: 0.3125rem;
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 5.625rem;
+  width: 5.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .gear {
+    display: none;
+  }
 }
 .gear:hover {
   background: #6E6E6E;
@@ -1307,9 +1419,25 @@ a {
   justify-content: flex-start;
 }
 
+.item {
+  margin-bottom: 1.25rem;
+}
+
 .gear__items-list {
-  height: 7.5rem;
+  height: 5.625rem;
   opacity: 0;
+}
+
+.gear__items-item {
+  background: #fff;
+}
+
+.item__text {
+  margin-left: 1.875rem;
+}
+
+.item__value {
+  margin-left: 3.75rem;
 }
 
 .cost__container {
@@ -1317,6 +1445,13 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .cost__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .cost__value {
   font-size: 2.25rem;
@@ -1332,6 +1467,13 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .cost__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .cost__value {
   font-size: 2.25rem;
@@ -1343,22 +1485,30 @@ a {
 }
 
 .spec {
-  margin-top: 27px;
+  margin-top: 1.6875rem;
+  margin-bottom: 3.125rem;
 }
 .spec__container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .spec__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .spec__title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #666666;
 }
 .spec__value {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #000000;
 }
 .spec__weight {
-  margin-left: 86px;
+  margin-left: 5.375rem;
 }

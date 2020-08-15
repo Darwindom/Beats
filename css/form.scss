@@ -15,11 +15,11 @@
         }
 
         @include tablets {
-            padding: 70px;
+            padding: rem(70px);
         }
 
         @include phones {
-            padding: 0px;
+            padding: 0;
         }
 
     
@@ -30,12 +30,19 @@
         right: rem(-150px);
 
         @include tablets {
-            top: rem(-75px);
+            top: rem(-15px);
+            right: rem(50px);
+        }
+
+        @include phones {
+            top: rem(-85px);
+            right: rem(30px);
         }
 
          @include compact {
             top: rem(-215px)
         }
+    
     }
 
     }
@@ -73,7 +80,7 @@
     width: 100%;
     padding: rem(17px) rem(11px);
     border: rem(2px) solid transparent;
-    border-radius: 4px;
+    border-radius: rem(4px);
     @include tablets {
         padding: rem(8px) rem(11px);
     }

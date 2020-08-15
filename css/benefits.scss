@@ -9,8 +9,18 @@
     &::before{
         content: url('../img/Icons/19.png');
         position: absolute;
-        bottom: -50%;
+        bottom: -53%;
+        z-index: 1;
+
+        @include tablets {
+            bottom: -26%;
+        }
+
+        @include phones{
+            bottom: -8%;
+          }
     }
+
 }
 
 .benefits__item {

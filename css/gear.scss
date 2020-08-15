@@ -1,13 +1,17 @@
 .gear {
-  margin-top: rem(-66px);
+  margin-top: rem(-20px);
   background: #9A9A9A;
   border-radius: rem(5px);
-  height: rem(120px);
-  width: rem(120px);
+  height: rem(90px);
+  width: rem(90px);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  @include tablets{
+   display: none;
+    }
 
   &:hover {
     background: #6E6E6E;
@@ -22,10 +26,30 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  
+}
+
+.item {
+  margin-bottom: rem(20px);
 
 }
+
 
 .gear__items-list {
-  height: rem(120px);
+  height: rem(90px);
   opacity: 0;
+  
 }
+
+.gear__items-item {
+  background: #fff;
+}
+
+.item__text {
+  margin-left: rem(30px);
+}
+
+.item__value {
+  margin-left: rem(60px);
+}
+
