@@ -472,7 +472,7 @@ a {
 @media screen and (max-width: 768px) {
   .hero:after {
     right: 6.875rem;
-    top: 51.875rem;
+    top: 48.75rem;
   }
 }
 @media screen and (max-width: 349px) {
@@ -514,11 +514,17 @@ a {
   justify-content: space-between;
   height: 100%;
   padding: 1.5rem 0rem 2.8125rem;
-  background: url("../img/2-layers.png") right center/50% auto no-repeat;
+  background: url("../img/2-layers.png") right center/50% no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background: none;
+    background: url("../img/2-layers.png") top 20% center/50% no-repeat;
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .hero__container {
+    min-width: 20rem;
   }
 }
 
@@ -528,6 +534,11 @@ a {
   font-weight: bold;
   margin-bottom: 1.0625rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 549px) {
+  .hero__main-title {
+    font-size: 2.25rem;
+  }
 }
 
 .hero__title-desc {
@@ -557,11 +568,11 @@ a {
 }
 
 .logo {
-  margin-top: -8px;
+  margin-top: -0.5rem;
 }
 
 .menu {
-  padding-top: 5px;
+  padding-top: 0.3125rem;
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -1240,6 +1251,16 @@ a {
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .slider__container {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 549px) {
+  .slider__container {
+    min-width: 100%;
+  }
 }
 .slider__slide-logo {
   margin-top: 3.125rem;

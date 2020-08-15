@@ -7,11 +7,12 @@
 }
 
 .logo{
-margin-top: -8px;
+margin-top: rem(-8px);
+
 }
 
 .menu {
-padding-top: 5px;
+padding-top: rem(5px);
 
     @include tablets {
         display: none;

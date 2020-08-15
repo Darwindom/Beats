@@ -11,6 +11,14 @@
     margin: 0 auto;
     overflow: hidden;
 
+    @include tablets{
+    min-width: 100%;
+    }
+    
+    @include phones{
+      min-width: 100%;
+      }
+
   }
 
   &__slide-logo {
