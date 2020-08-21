@@ -1263,19 +1263,19 @@ a {
 }
 @media screen and (max-width: 768px) {
   .slider__left {
-    top: 28%;
+    top: 35%;
     left: 9.375rem;
   }
 }
 @media screen and (max-width: 549px) {
   .slider__left {
-    top: 25%;
+    top: 33%;
     left: 1.875rem;
   }
 }
 @media screen and (max-width: 349px) {
   .slider__left {
-    top: 23%;
+    top: 29%;
     left: 1.25rem;
   }
 }
@@ -1288,19 +1288,19 @@ a {
 }
 @media screen and (max-width: 768px) {
   .slider__right {
-    top: 28%;
+    top: 35%;
     right: 9.375rem;
   }
 }
 @media screen and (max-width: 549px) {
   .slider__right {
-    top: 25%;
-    right: 1.875rem;
+    top: 32%;
+    right: 2.3125rem;
   }
 }
 @media screen and (max-width: 349px) {
   .slider__right {
-    top: 23%;
+    top: 29%;
     right: 1.25rem;
   }
 }
@@ -1599,7 +1599,7 @@ a {
 }
 
 .burger {
-  position: fixed;
+  position: absolute;
   top: 1.25rem;
   right: 10%;
   height: 25px;
