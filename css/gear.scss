@@ -1,5 +1,5 @@
 .gear {
-  margin-top: rem(-20px);
+  margin-bottom: rem(50px);
   background: #9A9A9A;
   border-radius: rem(5px);
   height: rem(90px);
@@ -8,16 +8,29 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
 
   @include tablets{
    display: none;
     }
 
-  &:hover {
-    background: #6E6E6E;
+    
+
+  &:hover + .gear__items-list {
+
+   left: 740px;
+   
   }
-  &:hover + .gear__items-list{
-    opacity: 1;
+}
+
+.gear__items-list {
+  position: absolute;
+  left: 999999999px;
+
+  &:hover {
+    position: absolute;
+  left: 740px;
+  cursor: pointer;
   }
 }
 
@@ -35,14 +48,10 @@
 }
 
 
-.gear__items-list {
-  height: rem(90px);
-  opacity: 0;
-  
-}
-
 .gear__items-item {
-  background: #fff;
+  background: $white;
+  padding: rem(20px);
+
 }
 
 .item__text {

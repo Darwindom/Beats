@@ -17,8 +17,12 @@
         
   }
 
- .tm-icon, .vk-icon, .in-icon{
+ .socials__link{
    fill: $darkgrey;
+
+   &:hover {
+     fill: $black;
+   }
  }
 
 
