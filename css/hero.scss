@@ -14,7 +14,7 @@
 
         @include tablets {
          right: rem(110px);
-         top: rem(780px);
+         top: rem(910px);
         }
 
         @include compact {
@@ -79,8 +79,13 @@
     margin-bottom: rem(17px);
     text-transform: uppercase;
 
+    @include tablets {
+        max-width: 90%;
+    }
+
     @include phones {
         font-size: rem(36px);
+        max-width: 75%;
     }
     
 }

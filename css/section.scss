@@ -23,6 +23,10 @@
     @include phones {
         font-size: rem(36px);
     }
+
+    @include compact {
+        font-size: rem(30px);
+    }
 }
 
 .section__title--white {
@@ -33,13 +37,20 @@
 
 .headline{
     margin-bottom: rem(57px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+
 }
 
 
 .headline__subtitle{
     padding: 0 20%;
+    text-align: center;
 
     @include phones {
         padding: 0 5%;
     }
+
 }

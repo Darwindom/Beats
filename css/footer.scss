@@ -16,9 +16,9 @@
     min-height: rem(50px);
     display: flex;
     justify-content: space-between;
+    padding: rem(30px);
 
     @include phones {
-        display: flex;
         justify-content: center;
         align-items: center;
        flex-direction: column;
@@ -37,6 +37,15 @@
        left: rem(80px);
        margin-bottom: rem(15px);
     }
+
+    @include compact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: rem(16px); 
+          
+     }
 }
 
 .contacts__place {
@@ -50,5 +59,9 @@
     @include phones {
     margin-left: rem(60px);
     }
+
+    @include compact {
+        margin-left: 0;
+        }
 }
 

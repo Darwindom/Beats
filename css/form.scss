@@ -19,7 +19,7 @@
         }
 
         @include phones {
-            padding: 0;
+            padding: rem(10px);
         }
 
     
@@ -30,12 +30,12 @@
         right: rem(-150px);
 
         @include tablets {
-            top: rem(-15px);
+            top: rem(-85px);
             right: rem(50px);
         }
 
         @include phones {
-            top: rem(-85px);
+            top: rem(-140px);
             right: rem(30px);
         }
 

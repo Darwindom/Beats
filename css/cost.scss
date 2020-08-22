@@ -11,12 +11,19 @@
         justify-content: center;
       
       }
+
+     
     }
   
     &__value {
       font-size: rem(36px);
       text-transform: uppercase;
-      color: #151515;
+      color: $black;
+
+      @include compact{
+        font-size: rem(26px);
+      
+      }
     }
   
     &__cost {

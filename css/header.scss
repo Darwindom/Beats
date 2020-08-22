@@ -61,6 +61,10 @@ padding-top: rem(5px);
 .phone-number__text {
     font-size: rem(21px);
     white-space: nowrap;
+
+    @include compact {
+        font-size: rem(20px)
+    }
 }
 
 .phone-number__icon-elem {

@@ -60,7 +60,7 @@
 
         @include compact{
           top: 29%;
-          left: rem(20px);
+          left: rem(13px);
   
           }
   }
@@ -128,7 +128,7 @@
         }
 
         @include phones{
-          min-width: 90%;
+          max-width: 93%;
           text-align: center;
         }
 
@@ -141,7 +141,7 @@
     &-description{
       font-weight: normal;
       line-height: rem(19px);
-      color: #666666;
+      color: $darkgrey;
       margin-top: rem(24px);
       max-width: rem(365px);
 
@@ -149,6 +149,11 @@
         text-align: center;
         max-width: rem(630px);
         }
+
+        @include phones{
+          text-align: center;
+          padding: rem(20px);
+          }
 
 
     }
