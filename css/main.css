@@ -513,7 +513,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding-top: 1.5625rem;
+  padding: 1.5625rem 0rem;
   background: url("../img/2-layers.png") right center/50% no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -1253,6 +1253,12 @@ a {
   }
 }
 
+@media screen and (max-width: 349px) {
+  .phone-number__text {
+    margin-left: 0;
+  }
+}
+
 .socials__list {
   display: block;
   display: flex;
@@ -1278,7 +1284,7 @@ a {
 }
 
 .slider {
-  background: #F8FAF9;
+  background: #f5f5f5;
   height: 100vh;
   width: 100%;
 }
@@ -1567,20 +1573,27 @@ a {
   }
 }
 .spec__title {
-  font-size: 1rem;
-  color: #666666;
+  color: #999999;
 }
 .spec__value {
   font-weight: bold;
   font-size: 1.125rem;
-  color: #000000;
+  color: #000;
 }
 .spec__weight {
   margin-left: 5.375rem;
 }
 
+.accordion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  background: url("../img/girl.png") center center/cover no-repeat;
+}
 .accordion__container {
-  background: url("../img/girl.png") center left/cover no-repeat;
   height: 100%;
   max-width: 100%;
   display: flex;
@@ -1627,7 +1640,7 @@ a {
   display: flex;
 }
 .sizes__item_silver {
-  background: #f5f5f5;
+  background: #999999;
 }
 .sizes__item_black {
   background: #000;
@@ -1643,9 +1656,9 @@ a {
 .sizes__item-title span {
   font-weight: bold;
   font-size: 2.25rem;
-  color: #FFFFFF;
+  color: #fff;
   position: absolute;
-  top: 84.375rem;
+  top: 54.375rem;
   left: 0;
   transform: rotateZ(-90deg);
   transform-origin: 0 0;
@@ -1660,14 +1673,13 @@ a {
   transition: all 0.5s ease-in-out;
 }
 .sizes__item-description_active {
-  max-width: 524px;
+  max-width: 32.75rem;
   opacity: 1;
   visibility: visible;
 }
 .sizes__item-description p {
-  padding: 31px 38px;
-  font-size: 16px;
-  color: #FFFFFF;
+  padding: 1.9375rem 2.375rem;
+  color: #fff;
 }
 
 .burger {

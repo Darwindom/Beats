@@ -1,8 +1,14 @@
 .accordion {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       
+  margin: 0 auto;
+  position: relative;
+  background: url("../img/girl.png") center center / cover no-repeat;
   
 
   &__container {
-    background: url("../img/girl.png") center left / cover no-repeat;
     height: 100%;
     max-width: 100%;
     display: flex;

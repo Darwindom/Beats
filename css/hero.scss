@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-top: rem(25px);
+    padding: rem(25px) rem(0px);
     background: url('../img/2-layers.png') right center / 50%  no-repeat ;
 
     @include tablets {
