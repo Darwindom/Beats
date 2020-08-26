@@ -2,6 +2,7 @@
 
 .benefits {
     display: flex;
+    color: $black;
 
     @include tablets {
         padding: rem(10px);

@@ -1,0 +1,20 @@
+.overlay-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+.modal-content {
+    width: 400px;
+    background: $darkgrey;
+    color: $grey;
+    margin: 0;
+}

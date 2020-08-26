@@ -1,10 +1,15 @@
 
+  .socials {
+    display: flex;
+    margin: 0;
+  }
+  
   .socials__list{
     display: block;
       display: flex;
       
 
-      @include phones{
+      @include tablets{
         display: flex;
         justify-content: center;
       }
@@ -19,6 +24,7 @@
 
  .socials__link{
    fill: $darkgrey;
+   margin: 0;
 
    &:hover {
      fill: $black;

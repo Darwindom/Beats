@@ -44,5 +44,5 @@ function moveLeft() {
         // просто сдвигаем, на велину слайда
         sliderPosition -= slideWidth.clientWidth;
     }
-    sliderRoot.style.transform = `translate(-${sliderPosition}px)`;
+    rootSlider.style.transform = `translate(-${sliderPosition}px)`;
 }

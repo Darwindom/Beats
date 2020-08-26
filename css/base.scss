@@ -3,6 +3,7 @@
     text-decoration: none;
     list-style: none; 
     
+    
     }
 
     html {
@@ -26,8 +27,8 @@
         line-height: 1.42;
         -webkit-osx-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #666666;
-        margin: 0;
+        color: $grey;
+        
     }
     
     .wrapper{
@@ -35,6 +36,7 @@
         width: 100%;
         min-height: 100%;
         overflow: hidden;
+        
     }
     
     
@@ -93,6 +95,7 @@
         text-decoration: none;
         border: none;
         display: inline-block;
+        cursor: pointer;
 
         &:hover{
             background-color: $darkred;
@@ -110,16 +113,22 @@
     }
 }
 
+.small__title {
+    font-size: rem(18px);
+    font-weight: bold;
+    color: $black;
+}
+
 .arrows {
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: rem(20px);
     cursor: pointer; }
   
   .arrows-right {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: rem(20px);
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);

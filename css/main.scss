@@ -1,7 +1,7 @@
 // Breakpoints
 $tablets: 768px;
 $phones: 549px;
-$compact: 349px;
+$compact: 320px;
 
 // color
 $grey: #f5f5f5;
@@ -46,6 +46,8 @@ $z-fixed-menu: 100;
 @import 'accordion';
 @import 'sizes';
 @import 'burger';
+@import 'team';
+@import 'overlay';
 
 
 

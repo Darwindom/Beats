@@ -18,8 +18,8 @@
 
   &:hover + .gear__items-list {
 
-   left: 740px;
-   
+   left: rem(690px);
+   color: $black;
   }
 }
 
@@ -29,8 +29,8 @@
 
   &:hover {
     position: absolute;
-  left: 740px;
-  cursor: pointer;
+    left: rem(690px);
+    color: $black;
   }
 }
 

@@ -1,0 +1,48 @@
+.team__item {
+    margin-left: rem(20px);
+    
+
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+
+.team--desktop {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(50px);
+}
+
+.team__title {
+    border: none;
+    background-color: $white;
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        position: absolute;
+        border: rem(5px) solid transparent;
+        border-top-color: $red;
+        left: 100%;
+        top: 50%;
+        border-bottom-width: rem(0px);
+        
+    }
+}
+
+.team__content {
+    overflow: hidden;
+    height: 0;
+    transition: .5s;
+}
+
+.team__occ {
+    color: $black;
+}
+
+.team__content-text {
+    color: $darkgrey;
+}
