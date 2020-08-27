@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Beats</title>
 </head>
 
@@ -493,6 +493,68 @@
                             </div>
                         </li>
                     </ul>
+                    <ul class="team team--mobile">
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/boris.png" alt="" class="team__member-pic">
+                            </div>
+                            <button class="small__title team__title" type="button">Boris</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__occ">
+                                        Chief technologist</div>
+                                        <div class="team__content-text">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/alla.png" alt="" class="team__member-pic">
+                            </div>
+                            <button class="small__title team__title" type="button">Alla</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__occ">
+                                        Packaging specialist</div>
+                                        <div class="team__content-text">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/kirill.png" alt="" class="team__member-pic">
+                            </div>
+                            <button class="small__title team__title" type="button">Kirill</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__occ">
+                                        Designer</div>
+                                        <div class="team__content-text">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__member">
+                                <img src="./img/mila.png" alt="" class="team__member-pic">
+                            </div>
+                            <button class="small__title team__title" type="button">Mila</button>
+                            <div class="team__content">
+                                <div class="team__content-block">
+                                    <div class="team__occ">
+                                        PR. Marketing</div>
+                                        <div class="team__content-text">
+                                            Lorem ipsum dolor sit amet consectetur.
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </container>
             </section>
 
@@ -653,39 +715,40 @@
             <div class="container">
                 <h2 class="section__title section__title--white">Order delivery</h2>
                 <form class="form">
+                    <input type="hidden" name="to" value="loft@mail.com">
                     <div class="form__col">
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Name</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="name" class="form__input">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Phone number</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="phone" class="form__input">
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Country</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="country" class="form__input">
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">City</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="city" class="form__input">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Street</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="street" class="form__input">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Apartment</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="apartment" class="form__input">
                             </label>
                             <label class="form__block">
                                 <div class="form__title">zip</div>
-                                <input type="text" class="form__input">
+                                <input type="text" name="zip" class="form__input">
                             </label>
                         </div>
                     </div>
@@ -693,7 +756,7 @@
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Comment</div>
-                                <textarea class="form__input form__input--textarea"></textarea>
+                                <textarea name="comment" class="form__input form__input--textarea"></textarea>
 
                             </label>
                         </div>
@@ -711,7 +774,7 @@
                         </div>
                         <div class="form__controls form__controls--last">
                             <label class="radio radio--checkbox">
-                                <input type="checkbox" class="radio__elem">
+                                <input type="checkbox" name="checkbox" class="radio__elem">
                                 <div class="radio__visible"></div>
                                 <div class="radio__title">Do not recall</div>
                             </label>
@@ -744,28 +807,28 @@
                     <ul class="socials__list">
                         <li class="socials__item ">
                             <a href="#" class="socials__link  socials__link--tm">
-                                <svg class="tm-icon">
+                                <svg width="36px" height="36px" class="tm-icon">
                                     <use xlink:href="./img/Icons/sprite.svg#tm"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item ">
                             <a href="#" class="socials__link  socials__link--vk">
-                                <svg class="vk-icon">
+                                <svg width="36px" height="36px" class="vk-icon">
                                     <use xlink:href="./img/Icons/sprite.svg#vk"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item ">
                             <a href="#" class="socials__link  socials__link--fb">
-                                <svg class="fb-icon">
+                                <svg width="36px" height="36px" class="fb-icon">
                                     <use xlink:href="./img/Icons/sprite.svg#fb"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item ">
                             <a href="#" class="socials__link  socials__link--in">
-                                <svg class="in-icon">
+                                <svg width="36px" height="36px" class="in-icon">
                                     <use xlink:href="./img/Icons/sprite.svg#in"></use>
                                 </svg>
                             </a>
@@ -809,6 +872,18 @@
             </li>
         </ul>
     </nav>
+
+    <div class="container">
+        <div id="modal" class="modal">
+            <div class="modal__container">
+                <div class="small__title modal__content">Message sent</div>
+            
+            <div class="modal__button-container">
+                <a href="#" class="btn app-close-btn">Close</a>
+            </div>
+        </div>
+        </div>
+    </div>
     
 
     <script src="./js/jquery-min.js"></script>
@@ -821,14 +896,7 @@
     <script src="./js/team.js"></script>
     <script src="./js/modal.js"></script>
 
-    <!-- <div class="container">
-    <div class="overlay-modal">
-        <div class="modal-container">
-            <a href="#" class="btn" id="openOverlay">Close</a>
-            <div class="modal-content">Message sent</div>
-        </div>
-    </div>
-</div> -->
+  
 </body>
 
 

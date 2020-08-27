@@ -1,9 +1,8 @@
-
 (function (window, document) {
 
     'use strict';
 
-    
+    // patch CustomEvent to allow constructor creation (IE/Chrome)
     if (typeof window.CustomEvent !== 'function') {
 
         window.CustomEvent = function (event, params) {
@@ -31,7 +30,7 @@
 
     function handleTouchEnd(e) {
 
-        
+        // if the user released on a different target, cancel!
         if (startEl !== e.target) return;
 
         var swipeThreshold = parseInt(startEl.getAttribute('data-swipe-threshold') || '20', 10);    // default 10px
@@ -62,13 +61,13 @@
 
         if (eventType !== '') {
 
-           
+            // fire event on the element that started the swipe
             startEl.dispatchEvent(new CustomEvent(eventType, { bubbles: true, cancelable: true }));
 
-            
+            // if (console && console.log) console.log(eventType + ' fired on ' + startEl.tagName);
         }
 
-        
+        // reset values
         xDown = null;
         yDown = null;
         timeDown = null;
@@ -76,7 +75,7 @@
 
     function handleTouchStart(e) {
 
-       
+        // if the element has data-swipe-ignore="true" we stop listening for swipe events
         if (e.target.getAttribute('data-swipe-ignore') === 'true') return;
 
         startEl = e.target;

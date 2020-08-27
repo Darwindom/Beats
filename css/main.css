@@ -1441,7 +1441,7 @@ a {
   font-weight: bold;
   font-size: 2.25rem;
   text-transform: uppercase;
-  color: #292929;
+  color: #000;
   max-width: 25rem;
 }
 @media screen and (max-width: 768px) {
@@ -1578,33 +1578,6 @@ a {
   margin-right: 0.8125rem;
 }
 
-.cost__container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 1.5rem;
-}
-@media screen and (max-width: 768px) {
-  .cost__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.cost__value {
-  font-size: 2.25rem;
-  text-transform: uppercase;
-  color: #000;
-}
-@media screen and (max-width: 320px) {
-  .cost__value {
-    font-size: 1.625rem;
-  }
-}
-.cost__cost {
-  margin-right: 0.8125rem;
-}
-
 .spec {
   margin-top: 1.6875rem;
   margin-bottom: 3.125rem;
@@ -1635,7 +1608,7 @@ a {
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  background: url("../img/girl.png") center center/cover no-repeat;
+  background: url("../img/girl.png") center/cover no-repeat;
 }
 .accordion__container {
   height: 100%;
@@ -1645,8 +1618,9 @@ a {
   justify-content: flex-start;
 }
 .accordion__slide-title {
-  margin-top: 7.1875rem;
-  margin-left: 5.25rem;
+  position: absolute;
+  top: 6.25rem;
+  left: 5rem;
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
@@ -1841,6 +1815,13 @@ a {
   overflow: hidden;
 }
 
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .team__item {
   margin-left: 1.25rem;
 }
@@ -1849,9 +1830,12 @@ a {
 }
 
 .team--desktop {
-  display: flex;
-  justify-content: center;
   margin-top: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .team--desktop {
+    display: none;
+  }
 }
 
 .team__title {
@@ -1877,12 +1861,32 @@ a {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 768px) {
+  .team__member {
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+  }
+}
+
 .team__occ {
   color: #000;
 }
 
 .team__content-text {
   color: #999999;
+}
+
+.team--mobile {
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .team--mobile {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .overlay-modal {
@@ -1903,4 +1907,26 @@ a {
   background: #999999;
   color: #f5f5f5;
   margin: 0;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: #e01f3d;
+  margin-bottom: 1.25rem;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 2.5rem 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

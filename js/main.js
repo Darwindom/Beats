@@ -27,7 +27,7 @@ sliderList.addEventListener('swiped-left', ()=> moveRight());
 
 // метод реализующий логику, для правых стрелок
 function moveRight() {
-    sliderPosition+= slideWidth.clientWidth;
+    sliderPosition += slideWidth.clientWidth;
     // если мы в конечной позиции слайдера, то переходим на последний слайд
     if (sliderPosition === sliderList.scrollWidth){
         // переходим к первому слайду

@@ -1,0 +1,31 @@
+.modal {
+    display: none;
+
+    &.error-modal {
+        
+        .modal__content {
+            color: $red;
+            margin-bottom: rem(20px);
+    }
+    }
+
+    &.fancybox-content {
+        
+        padding: 0 !important;
+    }
+
+    .fancybox-button {
+        display: none;
+    }
+}
+
+.modal__container {
+    background: $white;
+    padding: rem(40px) rem(60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+

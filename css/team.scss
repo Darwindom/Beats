@@ -1,3 +1,10 @@
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .team__item {
     margin-left: rem(20px);
     
@@ -9,9 +16,12 @@
 
 
 .team--desktop {
-    display: flex;
-    justify-content: center;
+
     margin-top: rem(50px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .team__title {
@@ -33,11 +43,21 @@
     }
 }
 
-.team__content {
+.team__content{
     overflow: hidden;
     height: 0;
     transition: .5s;
 }
+
+.team__member {
+
+    @include tablets {
+        overflow: hidden;
+        height: 0;
+        transition: .5s;
+    }
+}
+
 
 .team__occ {
     color: $black;
@@ -45,4 +65,15 @@
 
 .team__content-text {
     color: $darkgrey;
+}
+
+.team--mobile{
+    overflow: hidden;
+    height: 0;
+    transition: .5s;
+
+    @include tablets {
+        flex-direction: column;
+        height: 100%;
+    }
 }
