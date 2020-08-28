@@ -828,6 +828,126 @@ a {
   }
 }
 
+.container--column {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__title {
+  margin-bottom: 1.875rem;
+}
+
+.video {
+  position: relative;
+}
+.video__mp4 {
+  display: flex;
+  max-width: 41.25rem;
+  min-height: 23.125rem;
+}
+@media screen and (max-width: 768px) {
+  .video__mp4 {
+    width: 100%;
+    height: auto;
+  }
+}
+.video__controls {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  height: 2.1875rem;
+  padding: 0 1.375rem 0 0.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .video__controls {
+    padding: 0 38px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .video__controls {
+    padding: 0 23px;
+  }
+}
+.video__playpause, .video__volume-control {
+  height: 60px;
+  width: 35px;
+  cursor: pointer;
+}
+.video__play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video__play svg.video__play-icon {
+  fill: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .video__play svg.video__play-icon {
+    fill: rgba #fff, 0.9;
+  }
+}
+.video .paused .video__play-icon {
+  visibility: hidden;
+}
+.video .paused .video__playpause-icon {
+  fill-opacity: 0.3;
+}
+.video__progress, .video__volume-progress {
+  height: 4px;
+  background-color: #303030;
+  flex: 1;
+  cursor: pointer;
+}
+.video__total {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #303030;
+}
+.video__current, .video__volume-current {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.video__current:before, .video__volume-current:before {
+  content: "";
+  height: 0.8125rem;
+  width: 0.8125rem;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  background-color: #e01f3d;
+  top: 0;
+  left: 100%;
+  transform: translate(0, -35%);
+}
+.video .muted svg {
+  fill-opacity: 0.3;
+}
+.video .video__volume-progress {
+  min-width: 55px;
+  margin-left: -9px;
+}
+.video__volume {
+  display: flex;
+  margin-left: 38px;
+}
+@media screen and (max-width: 768px) {
+  .video__volume {
+    display: none;
+  }
+}
+.video svg {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #fff;
+}
+
 .reviews {
   margin-top: 2.5rem;
 }
@@ -835,14 +955,6 @@ a {
   position: absolute;
   top: 51.25rem;
   content: url("../img/Icons/8.png");
-}
-
-.review__title {
-  font-size: 1.6875rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 1.875rem;
-  text-transform: uppercase;
 }
 
 .reviews__display {
@@ -1100,7 +1212,6 @@ a {
 
 .form__btns {
   display: flex;
-  justify-content: center;
 }
 
 .radio {

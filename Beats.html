@@ -618,7 +618,6 @@
                 </div>
             </section>
 
-        </div>
         <section class="section reviews-section">
             <div class="container">
                 <h2 class="section__title">Reviews</h2>
@@ -707,9 +706,48 @@
 
                 </ul>
             </div>
-
-
         </section>
+
+        <section class="section work">
+            <div class="container container--column">
+                <div class="work__title">
+                   <h2 class="section__title">How do we work</h2>
+                </div>
+                <div class="video">
+                    <video src="./beats-solo2.mp4" class="video__mp4" id="video"></video>
+                    <div class="video__controls">
+                        <div class="video__playpause">
+                           <svg width="22px" height="16px" class="video__playpause-icon">
+                            <use xlink:href="./img/Icons/sprite.svg#playsmall"></use>
+                           </svg>
+                        </div>
+                        <div class="video__play">
+                            <svg width="52px" height="74px" class="video__play-icon">
+                                <use xlink:href="./img/Icons/sprite.svg#playbig"></use>
+                               </svg>
+                        </div>
+                        <div class="video__progress">
+                            <span class="video__total">
+                                <span class="video__current"></span>
+                            </span>
+                        </div>
+                        <div class="video__volume">
+                            <div class="video__volume-control">
+                                <svg width="18px" height="22px" class="video__volume-icon">
+                                    <use xlink:href="./img/Icons/sprite.svg#Volumevideo"></use>
+                                   </svg>
+                                   <div class="video__volume-progress">
+                                    <span class="video__volume-current"></span>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pagination"></div>
 
         <section class="section order-section">
             <div class="container">
@@ -892,6 +930,7 @@
     <script src="./js/swipe.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/video.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/modal.js"></script>
