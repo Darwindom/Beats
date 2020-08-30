@@ -1,5 +1,5 @@
 const findBlockByAlias = alias => {
-    $(".reviews__display-inner").filter((ndx, item)=>{
+    $(".reviews__display").filter((ndx, item)=>{
         return $(item).attr("data-linked-with") === alias;
     });
 };

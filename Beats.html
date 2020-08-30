@@ -14,7 +14,7 @@
 
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section section__hero">
+            <section class="section section__hero active">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./img/Icons/logo.svg" alt="logo" class="logo">
@@ -196,7 +196,7 @@
 
             <section class="section">
                 <div class="slider">
-                    <div class="container slider__container">
+                    <div class="slider__container">
                         <ul class="slider__list" id="sliderRoot">
                             <li class="slider__item">
                                 <img src="./img/Icons/arrow left.png" alt="" class="slider__left">
@@ -623,8 +623,8 @@
                 <h2 class="section__title">Reviews</h2>
                 <div class="reviews">
                     <div class="reviews__display">
-                        <div class="reviews__display-inner reviews__display-inner--active" data-linked-with="one">
-                            <div class="reviews__avatar">
+                        <div class="reviews__display-inner reviews__display-inner--active">
+                            <div class="reviews__avatar"  data-linked-with="one">
                                 <img src="./img/419-billie-hp-feature-left.png.large.1x.png" alt=""
                                     class="reviews__avatar-img">
                             </div>
@@ -643,8 +643,8 @@
                         </div>
 
                     
-                        <div class="reviews__display-inner" data-linked-with="two">
-                            <div class="reviews__avatar">
+                        <div class="reviews__display-inner">
+                            <div class="reviews__avatar" data-linked-with="two">
                                 <img src="./img/Review girl.png" alt=""
                                     class="reviews__avatar-img">
                             </div>
@@ -663,8 +663,8 @@
                         </div>
 
                     
-                        <div class="reviews__display-inner" data-linked-with="three">
-                            <div class="reviews__avatar">
+                        <div class="reviews__display-inner">
+                            <div class="reviews__avatar" data-linked-with="three">
                                 <img src="./img/Review boy.png" alt=""
                                     class="reviews__avatar-img">
                             </div>
@@ -703,7 +703,6 @@
                                 class="interactive-avatar__img">
                         </a>
                     </li>
-
                 </ul>
             </div>
         </section>
@@ -827,7 +826,7 @@
         </section>
     </div>
     <section class="section footer-section">
-        
+        <div id="map"></div>
         <footer class="footer">
             <div class="container footer__container">
                 <adress class="contacts">
@@ -926,6 +925,8 @@
 
     <script src="./js/jquery-min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US"></script>
+    <script src="./js/map.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/swipe.js"></script>
     <script src="./js/main.js"></script>
@@ -934,10 +935,8 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/ops.js"></script>
 
   
 </body>
-
-
-
 </html>

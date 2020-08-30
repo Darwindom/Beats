@@ -5,7 +5,7 @@
     color: $black;
 
     @include tablets {
-        padding: rem(10px);
+        padding: rem(20px);
     }
     
     @include phones {
