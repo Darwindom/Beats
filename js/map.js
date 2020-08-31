@@ -2,31 +2,34 @@ let myMap;
 
 const init = () => {
     var myMap = new ymaps.Map("map", {
-        center: [34.783661, 32.097889],
+        center: [31.238567, 34.882650],
         zoom: 11,
         controls: []
     });
 
     const coords = [
-        [34.778379, 32.083803],
-        [34.778073, 32.012313],
-        [34.828436, 32.063012],
-        [34.751213, 32.015823]
+        [31.228023, 34.798577],
+        [31.064017, 35.030540],
+        [31.304216, 34.625439],
+        [31.365386, 34.810951]
     ];
 
     const myCollection = new ymaps.GeoObjectCollection({}, {
         draggable: false,
         iconLayout: 'default#image',
         iconImageHref: './img/Icons/location.png',
-        iconImageSize: [15, 27],
-        iconImageOffset: [-15, -27]
-    })
-}
+        iconImageSize: [46, 57],
+        iconImageOffset: [-46, -57]
+    });
 
-cords.forEach(coord => {
-    myCollection.add(new ymaps.placemark(cord));
+
+coords.forEach(coord => {
+    myCollection.add(new ymaps.Placemark(coord));
 });
 
 myMap.geoObjects.add(myCollection);
 
+myMap.behaviors.disable('scrollZoom');
+
+}
 ymaps.ready(init);

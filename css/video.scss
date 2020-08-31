@@ -39,10 +39,14 @@ margin-bottom: rem(30px);
     }
 }
 
-&__playpause, 
-&__volume-control {
-    height: 60px;
-    width: 35px;
+&__playpause {
+cursor: pointer;
+}
+
+&__volume-control{
+     display: flex;
+    height: rem(20px);
+    width: rem(55px);
     cursor: pointer;
 }
 
@@ -75,7 +79,7 @@ fill-opacity: 0.3;
 
 &__progress,
 &__volume-progress{
-    height: 4px;
+    height: rem(4px);
     background-color: #303030;
     flex: 1;
     cursor: pointer;
@@ -118,18 +122,16 @@ svg {
 
 
 .video__volume-progress{
-    min-width: 55px;
-    margin-left: -9px;
+    min-width: rem(55px);
+    margin-left: rem(-9px);
 }
 
 &__volume {
     display: flex;
-    margin-left: 38px;
+    margin-left: rem(38px);
 
-    @include tablets {
-display: none;
-    }
 }
+
 
 svg {
     max-width: 100%;

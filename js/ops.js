@@ -1,7 +1,7 @@
 const section = $("section");
 const display = $("maincontent");
 
-sections.first().addClass("active");
+section.first().addClass("active");
 
 const performTransition = sectionEq => {
     const position = sectionEq * -100;
@@ -38,7 +38,7 @@ $(window).on("wheel", e => {
         scrollViewport("prev") 
     }
 
-    console.log(deltaY);
+    
 });
 
 // MENU NAVIGATION

@@ -4,8 +4,8 @@ $('.form').submit(e => {
     $.fancybox.open({
         src: "#modal",
         type: "inline"
-    })
-});
+    });
+
 
 $(".app-close-btn").click(e => {
     e.preventDefault();
@@ -35,9 +35,7 @@ if (isValid) {
             comment: comment.val(),
             to: to.val(),
         },
-
-
-        error: data => { },
+        error: data => {},
     });
 
     request.done((data) => {
@@ -57,7 +55,7 @@ if (isValid) {
         });
     })
   }
-
+});
 
 $(".app-close-btn").click((e) => {
     e.preventDefault();
