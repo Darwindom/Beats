@@ -14,7 +14,7 @@
 
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section section__hero active">
+            <section data-section-id="hero" class="section section__hero active">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./img/Icons/logo.svg" alt="logo" class="logo">
@@ -29,32 +29,32 @@
                                 <nav class="burger-menu">
                                     <ul class="burger-menu__list">
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="aboutus" class="burger-menu__link">
                                                 About us
                                             </a>
                                         </li>
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="headphones" class="burger-menu__link">
                                                 Headphones
                                             </a>
                                         </li>
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="team" class="burger-menu__link">
                                                 Team
                                             </a>
                                         </li>
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="colors" class="burger-menu__link">
                                                 Colors
                                             </a>
                                         </li>
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="reviews" class="burger-menu__link">
                                                 Reviews
                                             </a>
                                         </li>
                                         <li class="burger-menu__item">
-                                            <a href="#" class="burger-menu__link">
+                                            <a href="#" data-scroll-to="work" class="burger-menu__link">
                                                 How do we work
                                             </a>
                                         </li>
@@ -70,25 +70,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">About us</a>
+                                    <a href="#" data-scroll-to="aboutus" class="menu__link">About us</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Headphones</a>
+                                    <a href="#" data-scroll-to="headphones" class="menu__link">Headphones</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Team</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Team</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Colors</a>
+                                    <a href="#" data-scroll-to="colors" class="menu__link">Colors</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Reviews</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Reviews</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">How do we work</a>
+                                    <a href="#" data-scroll-to="work" class="menu__link">How do we work</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Contacts</a>
+                                    <a href="#" data-scroll-to="colors" class="menu__link">Contacts</a>
                                 </li>
 
                             </ul>
@@ -105,7 +105,7 @@
                         <h1 class="hero__main-title">Wireless headphones beat solo 3</h1>
                         <div class="hero__title-desc">Meet the new version of headphones
                             from the Powerbeats line.</div>
-                        <a href="#" class="btn ">Order now</a>
+                        <a href="#" data-scroll-to="order" class="btn">Order now</a>
                     </div>
                     <div class="hero__icons-section">
                         <ul class="features">
@@ -133,7 +133,7 @@
             </section>
 
 
-            <section class="section benefits-section ">
+            <section data-section-id="aboutus" class="section benefits-section ">
                 <div class="container benefits-container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Why beat solo 3 ?</h2>
@@ -194,7 +194,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section data-section-id="headphones" class="section">
                 <div class="slider">
                     <div class="slider__container">
                         <ul class="slider__list" id="sliderRoot">
@@ -266,7 +266,7 @@
                                                     <p class="cost__value">199 90 $</p>
                                                 </div>
                                                 <div class="cost__button">
-                                                    <div class="btn">order now</div>
+                                                    <div data-scroll-to="order" class="btn">order now</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -428,7 +428,7 @@
                 </div>
             </section>
 
-            <section class="section team-section">
+            <section data-section-id="team" class="section team-section">
                 <container class="container">
                     <div class="section__title">Team</div>
                     <ul class="team team--desktop">
@@ -558,7 +558,7 @@
                 </container>
             </section>
 
-            <section class="accordion ">
+            <section data-section-id="colors" class="accordion ">
                 <div class="accordion__container ">
                     <div class="accordion__slide-title-container">
                         <h2 class="accordion__slide-title">colors</h2>
@@ -618,7 +618,7 @@
                 </div>
             </section>
 
-        <section class="section reviews-section">
+        <section data-section-id="reviews" class="section reviews-section">
             <div class="container">
                 <h2 class="section__title">Reviews</h2>
                 <div class="reviews">
@@ -707,7 +707,7 @@
             </div>
         </section>
 
-        <section class="section work">
+        <section data-section-id="work" class="section work">
             <div class="container container--column">
                 <div class="work__title">
                    <h2 class="section__title">How do we work</h2>
@@ -748,7 +748,7 @@
     </section>
     <div class="pagination"></div>
 
-        <section class="section order-section">
+        <section data-section-id="order" class="section order-section">
             <div class="container">
                 <h2 class="section__title section__title--white">Order delivery</h2>
                 <form class="form">
@@ -825,7 +825,7 @@
             </div>
         </section>
     </div>
-    <section class="section footer-section">
+    <section data-section-id="footer" class="section footer-section">
         <div id="map"></div>
         <footer class="footer">
             <div class="container footer__container">
@@ -926,6 +926,7 @@
     <script src="./js/jquery-min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US"></script>
+    <script src="./js/ops.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/swipe.js"></script>
@@ -935,7 +936,6 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/ops.js"></script>
 
   
 </body>

@@ -125,20 +125,6 @@
     color: $black;
 }
 
-.arrows {
-    position: absolute;
-    top: 50%;
-    left: rem(20px);
-    cursor: pointer; }
-  
-  .arrows-right {
-    position: absolute;
-    top: 50%;
-    right: rem(20px);
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-    cursor: pointer; }
 
 
     

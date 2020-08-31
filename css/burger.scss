@@ -8,10 +8,12 @@
   z-index: 15;
   transition:all .4s;
   display: none;
+  
 
   @include tablets {
     display: inline-block;
     right: rem(20px);
+    
   }
 
   

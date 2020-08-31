@@ -1,3 +1,19 @@
+const mesureWidth = item => {
+    const screenWidth = $(window).width();
+    const container = item.closest(".sizes__list");
+    const titlesBlocks = container.find(".sizes__item-title");
+    const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
+
+    const isMobile = window.matchMedia("(max-width: 480px)").matches;
+
+    if (isMobile) {
+        return screenWidth - titlesWidth;
+    } else {
+        return 500;
+    }
+};
+
+
 const tabs = document.querySelectorAll('.sizes__item-title');
 
 Array.from(tabs).map(item => {
