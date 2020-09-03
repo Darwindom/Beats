@@ -1,26 +1,10 @@
 $('.form').submit(e => {
     e.preventDefault();
 
-<<<<<<< HEAD
-    $.fancybox.open({
-        src: "#modal",
-        type: "inline"
-    
-    });
-
-
-$(".app-close-btn").click(e => {
-    e.preventDefault();
-
-    $.fancybox.close();
-});
-=======
     // $.fancybox.open({
     //     src: "#modal",
     //     type: "inline"
     // });
->>>>>>> fee1e2cd629f595dc0f423948c7495372af2089d
-
 
 const form = $(e.currentTarget);
 const name = form.find("[name='name']");
@@ -32,7 +16,6 @@ const modal = $(".modal");
 const content = modal.find(".modal__content");
 
 const isValid = true;
-
 
 if (isValid) {
 
@@ -67,7 +50,6 @@ if (isValid) {
     })
   }
 });
-
 
 $(".app-close-btn").click((e) => {
     e.preventDefault();
