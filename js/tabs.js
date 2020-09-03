@@ -1,5 +1,6 @@
 const findBlockByAlias = alias => {
-    $(".reviews__display").filter((ndx, item)=>{
+    return $(".reviews__display-inner").filter((index, item)=>{
+
         return $(item).attr("data-linked-with") === alias;
     });
 };
@@ -12,7 +13,6 @@ $(".interactive-avatar__link").click(e => {
     const itemToShow = findBlockByAlias(target);
     const curItem = $this.closest(".reviews__switcher-item");
 
-
-    itemToShow.addClass("active").siblings().removeClass("active");
-    curItem.addClass("active").siblings().removeClass("active");
+    itemToShow.addClass("reviews__display-inner--active").siblings().removeClass("reviews__display-inner--active");
+    curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
 });

@@ -1,34 +1,36 @@
 const section = $("section");
-const display = $("maincontent");
+const display = $(".maincontent");
 
 section.first().addClass("active");
 
 const performTransition = sectionEq => {
     const position = sectionEq * -100;
 
+
     display.css({
         transform: `translateY(${position}%)`
     });
 
-    sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
 };
 
-const scrollViewport = direction =>{
-    const activeSection = sections.filter(".active");
+const scrollViewport = direction => {
+    console.log(direction)
+    const activeSection = section.filter(".active");
     const nextSection = activeSection.next();
-    const prevSection = activeSection ();
+    const prevSection = activeSection.prev();
 
-    if (direction === "next") {
+    if (direction === "next" && nextSection.length) {
         performTransition(nextSection.index());
     }
 
-    if (direction ==="prev") {
+    if (direction ==="prev" && prevSection.length) {
         performTransition(prevSection.index());
     }
 };
 
 $(window).on("wheel", e => {
-    const deltaY = e.originalEvent.deltaV;
+    const deltaY = e.originalEvent.deltaY;
     console.log("wheeeel")
 
     if (deltaY > 0) {
@@ -69,6 +71,3 @@ $("[data-scroll-to").click(e => {
     performTransition(reqSection.index());
 
 });
-
-// SIDE MENU
-

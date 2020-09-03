@@ -5,7 +5,7 @@ const play = containerVideo.querySelector('.video__play');
 const controls = containerVideo.querySelector('.video__controls');
 const total = containerVideo.querySelector('.video__total');
 const progress = containerVideo.querySelector('.video__current');
-const dynamic = containerVideo.querySelector('.video__volume-control');
+const dynamic = containerVideo.querySelector('.video__volume-icon');
 const volume = containerVideo.querySelector('.video__volume-progress');
 const volumeProgress = volume.firstElementChild;
 
@@ -18,7 +18,8 @@ video.addEventListener('timeupdate', timeUpdate);
 dynamic.addEventListener('click', mute);
 volume.addEventListener('click', setVolume);
 
-function setVolume() {
+function setVolume(e) {
+    console.log(e)
     volumeProgress.style.width = `${e.offsetX}px`;
     console.log(e.offsetX / volume.clientWidth)
     video.volume = e.offsetX / volume.clientWidth;
@@ -38,7 +39,7 @@ function togglePlay() {
     video.paused ?  video.play() : video.pause();
 }
 
-function setCurrentTime(event) {
+function setCurrentTime(e) {
     const offsetX = e.offsetX / total.clientWidth;
     console.log(offsetX * video.duration)
     video.currentTime = offsetX * video.duration;

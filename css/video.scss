@@ -45,8 +45,9 @@ cursor: pointer;
 
 &__volume-control{
      display: flex;
+     align-items: center;
     height: rem(20px);
-    width: rem(55px);
+    width: rem(85px);
     cursor: pointer;
 }
 
@@ -121,14 +122,10 @@ svg {
 }
 
 
-.video__volume-progress{
-    min-width: rem(55px);
-    margin-left: rem(-9px);
-}
-
 &__volume {
     display: flex;
-    margin-left: rem(38px);
+    align-items: center;
+    margin-left: rem(40px);
 
 }
 

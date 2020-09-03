@@ -129,12 +129,12 @@
     overflow: hidden;
     position: relative;
 
-    &:hover {
-        border: rem(3px) solid $red
-        }
-
     &:active {
-    border: rem(6px) solid $red
+    border: rem(5px) solid $red
+    }
+
+    &--active {
+        border: rem(5px) solid $red;
     }
 
 }
@@ -147,6 +147,8 @@
     right: 0;
     display: block;
 }
+
+
 
 .interactive-avatar__img {
     display: block;

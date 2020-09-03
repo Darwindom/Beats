@@ -15,4 +15,3 @@ function toggleMenu(){
 }
 
 burger.addEventListener('click' , toggleMenu);
-

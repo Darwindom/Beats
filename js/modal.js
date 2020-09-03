@@ -4,6 +4,7 @@ $('.form').submit(e => {
     $.fancybox.open({
         src: "#modal",
         type: "inline"
+    
     });
 
 
@@ -12,6 +13,7 @@ $(".app-close-btn").click(e => {
 
     $.fancybox.close();
 });
+
 
 const form = $(e.currentTarget);
 const name = form.find("[name='name']");
@@ -23,6 +25,7 @@ const modal = $(".modal");
 const content = modal.find(".modal__content");
 
 const isValid = validateFields(form, [name, phone, comment, to]);
+
 
 if (isValid) {
 
@@ -56,6 +59,7 @@ if (isValid) {
     })
   }
 });
+
 
 $(".app-close-btn").click((e) => {
     e.preventDefault();
