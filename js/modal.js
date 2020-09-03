@@ -1,17 +1,10 @@
 $('.form').submit(e => {
     e.preventDefault();
 
-    $.fancybox.open({
-        src: "#modal",
-        type: "inline"
-    });
-
-
-$(".app-close-btn").click(e => {
-    e.preventDefault();
-
-    $.fancybox.close();
-});
+    // $.fancybox.open({
+    //     src: "#modal",
+    //     type: "inline"
+    // });
 
 const form = $(e.currentTarget);
 const name = form.find("[name='name']");
@@ -22,7 +15,7 @@ const to = form.find("[name='to']");
 const modal = $(".modal");
 const content = modal.find(".modal__content");
 
-const isValid = validateFields(form, [name, phone, comment, to]);
+const isValid = true;
 
 if (isValid) {
 
@@ -40,6 +33,7 @@ if (isValid) {
 
     request.done((data) => {
         content.text(data.message);
+        e.currentTarget.reset();
     });
 
     request.fail((data) => {

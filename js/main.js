@@ -29,7 +29,8 @@ sliderList.addEventListener('swiped-left', ()=> moveRight());
 function moveRight() {
     sliderPosition += slideWidth.clientWidth;
     // если мы в конечной позиции слайдера, то переходим на последний слайд
-    if (sliderPosition === sliderList.scrollWidth){
+    console.log(sliderPosition, sliderList.clientWidth * (sliderList.children.length - 1))
+    if (sliderPosition === sliderList.clientWidth * sliderList.children.length){
         // переходим к первому слайду
         sliderPosition = 0;
     }
@@ -39,7 +40,7 @@ function moveRight() {
 function moveLeft() {
     if (sliderPosition === 0){
         // если мы в начальной позиции слайдера, то переходим на последний слайд
-        sliderPosition = sliderList.scrollWidth - slideWidth.clientWidth;
+        sliderPosition = (sliderList.clientWidth * sliderList.children.length) - slideWidth.clientWidth;
     }else{
         // просто сдвигаем, на велину слайда
         sliderPosition -= slideWidth.clientWidth;

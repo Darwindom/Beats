@@ -353,7 +353,7 @@ html {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 14px;
   }
@@ -2050,4 +2050,8 @@ a {
 #map {
   min-width: 100%;
   min-height: 100%;
+}
+
+html, body {
+  height: 100%;
 }
