@@ -86,7 +86,7 @@
         opacity: 1;
         visibility: visible;
 
-<<<<<<< HEAD
+
         @include phones {
           max-width: rem(230px);
         }
@@ -95,14 +95,14 @@
           max-width: rem(130px);
         }
 
-=======
+
         @include phones{
           max-width: rem(270px);
         }
         @include compact{
           max-width: rem(130px);
         }
->>>>>>> fee1e2cd629f595dc0f423948c7495372af2089d
+
       }
 
       & p {
@@ -110,24 +110,16 @@
         color: $white;
         min-width: rem(524px);
 
-<<<<<<< HEAD
         @include phones {
           min-width: rem(230px);
         }
 
         @include compact{
-          min-width: rem(150px);
-=======
-        @include phones{
-          min-width: rem(270px);
-        }
-        @include compact{
-          min-width: rem(130px);
->>>>>>> fee1e2cd629f595dc0f423948c7495372af2089d
-        }
+          min-width: rem(150px); 
       }
     }
 
 
+  }
   }
 }
