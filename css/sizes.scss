@@ -63,8 +63,15 @@
         line-height: rem(80px);
         white-space: nowrap;
 
+        @include tablets {
+          font-size: rem(30px); 
+          top: rem(800px); 
+          line-height: rem(100px);
+        }
+
         @include phones {
-          font-size: rem(30px);
+          font-size: rem(30px);  
+          line-height: rem(80px);
         }
     
         @include compact{
@@ -82,25 +89,16 @@
       transition: all .5s ease-in-out;
 
       &_active {
-        max-width: rem(524px);
+        max-width: rem(500px);
         opacity: 1;
         visibility: visible;
 
+        @include tablets {
+          max-width: rem(480px);
+        }
 
         @include phones {
-          max-width: rem(230px);
-        }
-
-        @include compact{
-          max-width: rem(130px);
-        }
-
-
-        @include phones{
-          max-width: rem(270px);
-        }
-        @include compact{
-          max-width: rem(130px);
+          max-width: rem(180px);
         }
 
       }

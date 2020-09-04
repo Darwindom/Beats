@@ -3,17 +3,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-}
 
-.team__item {
+&__item {
     margin-left: rem(20px);
+       @include tablets {
+        margin-bottom: 30px;
+    }
     
 
     &:first-child{
         margin-left: 0;
     }
 }
-
+}
 
 .team--desktop {
 
