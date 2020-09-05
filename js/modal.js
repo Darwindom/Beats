@@ -10,6 +10,11 @@ const form = $(e.currentTarget);
 const name = form.find("[name='name']");
 const phone = form.find("[name='phone']");
 const comment = form.find("[name='comment']");
+const comment = form.find("[name='country']");
+const comment = form.find("[name='city']");
+const comment = form.find("[name='street']");
+const comment = form.find("[name='apartment']");
+const comment = form.find("[name='zip']");
 const to = form.find("[name='to']");
 
 const modal = $(".modal");

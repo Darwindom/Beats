@@ -27,6 +27,9 @@
         @include phones{
             bottom: -28%;
           }
+          @include phones{
+            bottom: -3%;
+          }
     }
 
 }

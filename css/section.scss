@@ -7,8 +7,8 @@
     margin: 0 auto;
     position: relative;
         
-    @include compact {
-        min-height: rem(1100px);
+    @include phones {       
+        height: 100%;
     }
 }
 

@@ -5,6 +5,11 @@
         position: absolute;
         top: rem(820px);
         content: url('../img/Icons/8.png');
+
+        @include compact {
+            top: rem(880px);
+            z-index: 1;
+        }
     }
 }
 
@@ -22,7 +27,7 @@
     }
 
     @include compact{
-        min-height: rem(650px);
+        min-height: rem(0px);
     }
 
     

@@ -18,7 +18,8 @@
         }
 
         @include compact {
-            right: rem(40px)
+            right: rem(10px);
+            top: rem(720px);
         }
     }
 }
