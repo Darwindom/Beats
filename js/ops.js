@@ -1,5 +1,14 @@
 const section = $("section");
 const display = $(".maincontent");
+// const sideMenu = $(".fixed-menu");
+// const menuItems = sideMenu.find('.fixed-menu__item');
+
+// const mobileDetect = new mobileDetect(window.navigator.userAgent);
+// const isMobile = mobileDetect.mobile();
+
+// let inScroll = false;
+
+// Sections.first().addClass("active");
 
 
 
@@ -13,7 +22,7 @@ const performTransition = sectionEq => {
     section.eq(sectionEq).addClass("active").siblings().removeClass("active");
 };
 
-const scrollViewport = direction =>{
+const scrollViewport = direction => {
     console.log(direction)
     const activeSection = section.filter(".active");
     const nextSection = activeSection.next();

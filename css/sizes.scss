@@ -77,7 +77,7 @@
         @include compact{
           font-size: rem(24px);
           line-height: rem(50px);
-          top: rem(640px);
+          top: rem(730px);
         }
       }
     }
@@ -95,7 +95,7 @@
         visibility: visible;
 
         @include tablets {
-          max-width: rem(480px);
+          max-width: rem(380px);
         }
 
         @include phones {

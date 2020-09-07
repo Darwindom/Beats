@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
 const submit = document.querySelector('.submit');
 
-submit.addEventListener('click', event => {
+submit.addEventListener('submit', event => {
     event.preventDefault();
 
 
