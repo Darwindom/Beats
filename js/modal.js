@@ -9,12 +9,11 @@ $('.form').submit(e => {
 const form = $(e.currentTarget);
 const name = form.find("[name='name']");
 const phone = form.find("[name='phone']");
-const comment = form.find("[name='comment']");
-const comment = form.find("[name='country']");
-const comment = form.find("[name='city']");
-const comment = form.find("[name='street']");
-const comment = form.find("[name='apartment']");
-const comment = form.find("[name='zip']");
+const country = form.find("[name='comment']");
+const city = form.find("[name='city']");
+const street = form.find("[name='street']");
+const apartment = form.find("[name='apartment']");
+const zip = form.find("[name='zip']");
 const to = form.find("[name='to']");
 
 const modal = $(".modal");
@@ -30,7 +29,11 @@ if (isValid) {
         data: {
             name: name.val(),
             phone: phone.val(),
-            comment: comment.val(),
+            country: country.val(),
+            city: city.val(),
+            street: street.val(),
+            apartment: apartment.val(),
+            zip: zip.val(),
             to: to.val(),
         },
         error: data => {},

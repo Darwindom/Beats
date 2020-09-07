@@ -40,8 +40,7 @@
         }
 
          @include compact {
-            top: rem(-20px);
-            right: rem(10px);
+            top: rem(-215px)
         }
     
     }
@@ -109,18 +108,22 @@
     margin-bottom: rem(5px);
     
 
-    @include phones {
+    @include tablets {
         justify-content: center;
-        justify-content: space-evenly;
     }
 }
 
 .form__controls--last {
     margin-bottom: rem(40px);
+    margin-right: rem(190px);
+    margin-top: rem(20px);
    
 }
 
 .form__btns {
     display: flex;
-    justify-content: center;
+    
+    @include tablets {
+        justify-content: center;
+    }
 }

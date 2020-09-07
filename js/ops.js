@@ -1,7 +1,7 @@
 const section = $("section");
 const display = $(".maincontent");
 
-section.first().addClass("active");
+
 
 const performTransition = sectionEq => {
     const position = sectionEq * -100;
@@ -23,7 +23,7 @@ const scrollViewport = direction =>{
         performTransition(nextSection.index());
     }
 
-    if (direction ==="prev" && prevSection.length) {
+    if (direction === "prev" && prevSection.length) {
         performTransition(prevSection.index());
     }
 };
