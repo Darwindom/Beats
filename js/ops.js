@@ -1,8 +1,9 @@
 const section = $("section");
 const display = $(".maincontent");
-// const sideMenu = $(".fixed-menu");
-// const menuItems = sideMenu.find('.fixed-menu__item');
+const sideMenu = $(".fixed-menu");
+const menuItems = sideMenu.find('.fixed-menu__item');
 
+// const currentSection = sections.eq(sectionEq);
 // const mobileDetect = new mobileDetect(window.navigator.userAgent);
 // const isMobile = mobileDetect.mobile();
 
@@ -16,10 +17,22 @@ const performTransition = sectionEq => {
     const position = sectionEq * -100;
 
     display.css({
-        transform: `translateY(${position}%)`
+        transform: `translateY(${position}%)`,
     });
 
     section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    
+    setTimeout(() => {
+        inscroll = false;
+
+    sideMenu
+    .find(".fixed-menu__item")
+    .eq(sectionEq)
+    .addClass("fixed-menu__item--active")
+    .siblings()
+    .removeClass("fixed-menu__item--active");
+}, 1300);
 };
 
 const scrollViewport = direction => {
@@ -55,8 +68,10 @@ $(window).on("wheel", e => {
 
 $(window).on("keydown", (e) => {
     const tagName = e.target.tagName.toLowerCase();
+    const userTypingInInputs = tagName === "input" || tagName === "textArea";
 
-    if (tagName !== "input" && tagName !== "textarea") {
+    if (userTypingInInputs) return; 
+
         switch (e.keyCode) {
             case 38: //prev
             scrollViewport("prev");
@@ -65,7 +80,7 @@ $(window).on("keydown", (e) => {
             case 40: //next
             scrollViewport("next");
             break;
-        }
+        
     }
 });
 

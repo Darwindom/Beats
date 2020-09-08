@@ -102,6 +102,10 @@
           max-width: rem(180px);
         }
 
+        @include compact {
+          max-width: rem(170px);
+        }
+
       }
 
       & p {
@@ -114,7 +118,7 @@
         }
 
         @include compact{
-          min-width: rem(150px); 
+          min-width: rem(170px); 
       }
     }
 
