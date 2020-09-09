@@ -3,12 +3,10 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find('.fixed-menu__item');
 
-// const currentSection = sections.eq(sectionEq);
-// const mobileDetect = new mobileDetect(window.navigator.userAgent);
+// const mobileDetect = new MobileDetect(window.navigator.userAgent);
 // const isMobile = mobileDetect.mobile();
 
-// let inScroll = false;
-
+let inScroll = false; 
 // Sections.first().addClass("active");
 
 
@@ -84,7 +82,9 @@ $(window).on("keydown", (e) => {
     }
 });
 
-$("[data-scroll-to").click(e => {
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
+$("[data-scroll-to]").click((e) => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);
@@ -94,6 +94,22 @@ $("[data-scroll-to").click(e => {
     performTransition(reqSection.index());
 
 });
+
+if (isMobile) {
+    $("body").swipe({
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollerDirection = "";
+    
+            if (direction === "up") scrollDirection = "next";
+            if (direction === "down") scrollDirection = "prev";
+    
+            scroller[scrollDirection]();
+        },
+    });
+
+}
+
 
 // SIDE MENU
 
