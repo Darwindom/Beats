@@ -19,7 +19,7 @@ const to = form.find("[name='to']");
 const modal = $(".modal");
 const content = modal.find(".modal__content");
 
-const isValid = true;
+const isValid = validateForm(e.currentTarget);
 
 if (isValid) {
 
@@ -29,11 +29,7 @@ if (isValid) {
         data: {
             name: name.val(),
             phone: phone.val(),
-            country: country.val(),
-            city: city.val(),
-            street: street.val(),
-            apartment: apartment.val(),
-            zip: zip.val(),
+            comment: country.val(),
             to: to.val(),
         },
         error: data => {},
@@ -58,6 +54,42 @@ if (isValid) {
     })
   }
 });
+
+function validateForm(form) {
+    let valid = true;
+
+    if (!validateBlock(form.elements.name)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.phone)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.country)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.city)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.street)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.apartment)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.zip)) {
+        valid = false;
+    }
+    if (!validateBlock(form.elements.comment)) {
+        valid = false;
+        
+    }
+    return valid;
+}
+
+
+function validateBlock(form__block) {
+    return form__block.checkValidity();
+}
 
 $(".app-close-btn").click((e) => {
     e.preventDefault();

@@ -3,8 +3,8 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find('.fixed-menu__item');
 
-// const mobileDetect = new MobileDetect(window.navigator.userAgent);
-// const isMobile = mobileDetect.mobile();
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false; 
 // Sections.first().addClass("active");
@@ -13,7 +13,7 @@ let inScroll = false;
 
 const performTransition = sectionEq => {
     const position = sectionEq * -100;
-
+    inScroll = true;
     display.css({
         transform: `translateY(${position}%)`,
     });
@@ -22,19 +22,20 @@ const performTransition = sectionEq => {
 
     
     setTimeout(() => {
-        inscroll = false;
+        inScroll = false;
 
-    sideMenu
-    .find(".fixed-menu__item")
-    .eq(sectionEq)
-    .addClass("fixed-menu__item--active")
-    .siblings()
-    .removeClass("fixed-menu__item--active");
-}, 1300);
+        sideMenu
+        .find(".fixed-menu__item")
+        .eq(sectionEq)
+        .addClass("fixed-menu__item--active")
+        .siblings()
+        .removeClass("fixed-menu__item--active");
+    }, 1300);
 };
 
 const scrollViewport = direction => {
-    console.log(direction)
+    if (inScroll) return;
+
     const activeSection = section.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
@@ -98,13 +99,9 @@ $("[data-scroll-to]").click((e) => {
 if (isMobile) {
     $("body").swipe({
         swipe: function (event, direction) {
-            const scroller = viewportScroller();
-            let scrollerDirection = "";
-    
-            if (direction === "up") scrollDirection = "next";
-            if (direction === "down") scrollDirection = "prev";
-    
-            scroller[scrollDirection]();
+            if (direction === "up") scrollViewport('next')
+            if (direction === "down") scrollViewport('prev')
+
         },
     });
 

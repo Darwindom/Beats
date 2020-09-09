@@ -1,7 +1,6 @@
 const form = document.querySelector('.form');
-const submit = document.querySelector('.submit');
 
-submit.addEventListener('submit', event => {
+form.addEventListener('submit', event => {
     event.preventDefault();
 
 
@@ -42,6 +41,7 @@ function validateForm(form) {
 
 
 function validateBlock(form__block) {
+    console.log(form__block.nextElementSibling)
     form__block.nextElementSibling.textContent = form__block.validationMessage;
     return form__block.checkValidity();
 }
